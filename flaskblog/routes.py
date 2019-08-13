@@ -106,7 +106,7 @@ def save_post_picture(form_picture):
 def new_post():
     form = PostForm()
     if form.validate_on_submit():
-        picture_file = 'default.jpg'
+        picture_file = ''
         if form.picture.data:
             picture_file = save_post_picture(form.picture.data)
 

@@ -1,16 +1,21 @@
 {% extends "layout.html" %}
+
+
+
 {% block content %}
     {% for post in posts.items %}
         <article class="media content-section">
           <img class="rounded-circle article-img" src="{{ url_for('static', filename='myBrand/' + post.author.image_file )}}">
           <div class="media-body">
             <div class="article-metadata">
-              <a class="mr-2" href="{{ url_for('user_posts', username=post.author.username) }}">{{ post.author.username }}</a>
-              <small class="text-muted">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+              <a class="mr-2" style="color:#FFFAFF" href="{{ url_for('user_posts', username=post.author.username) }}">{{ post.author.username }}</a>
+              <small class="">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
             </div>
             <h2><a class="article-title" href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2>
-            <p class="article-content">{{ post.content }}</p>
-            <img width="400" src="{{ post.post_image_file }}">
+            <p class="article-content" style="padding-right:5px; ">{{ post.content }}</p>
+
+            <img width="400" style="border:3px solid #021a40;" src="{{ post.post_image_file }}" alt=".">
+
           </div>
         </article>
     {% endfor %}

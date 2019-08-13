@@ -1,12 +1,13 @@
 body {
-  color: #333333;
+  color:#FFFAFF;
   margin-top: 5rem;
   background-color: #fafafa;
+  background-image: url(937353.png);
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+  color: #FFFAFF;
 }
 
 .bg-steel {
@@ -14,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-header .navbar-nav .nav-link {
-  color: #cbd5db;
+  color: #ffffff;
 }
 
 .site-header .navbar-nav .nav-link:hover {
@@ -26,7 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-section {
-  background: #ffffff;
+  background-color: #000000;
+  background: rgba(0,0,0,0.7);
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
@@ -42,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .article-title {
-  color: #444444;
+  color:#FFFAFF;
 }
 
 a.article-title:hover {
@@ -91,4 +93,9 @@ a.article-title:hover {
 img {
    padding:1px;
 
+}
+
+.words {
+  background-color: #87CEFA;
+  background: rgba(255,255,255,.2);
 }
