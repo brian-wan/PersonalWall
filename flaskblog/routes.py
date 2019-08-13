@@ -173,3 +173,7 @@ def user_posts(username):
 @app.route("/gallery")
 def gallery():
     return render_template('gallery.html')
+
+@app.route("/calendar")
+def calendar():
+    return render_template('calendar.html')

@@ -1,16 +1,15 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="container">
-    <div class="jumbotron bg-steel" style="height:100px; padding-top:15px;
-    padding-bottom:30px;">
+<div class="container" align="center">
+    <div class="jumbotron words content-section" style="height:100px; padding-top:15px;
+    padding-bottom:30px; background: rgba(0,0,0,0.7);">
         <h1 class="text-center text-light">Welcome to my blog!</h1>
         <p class="text-center text-light">Stay tuned for updates on my life!</p>
     </div>
 
-    <div class="col-lg-4" style="padding:45px; padding-top:10px; ">
-        <img width="600" style="border:3px solid #021a40; padding:1px;" src="{{ url_for('static', filename='profile.jpg') }}">
-    </div>
+
+    <img width="600" style="border:3px solid #021a40; padding:1px;" src="{{ url_for('static', filename='profile.jpg') }}">
 
 </div>
 

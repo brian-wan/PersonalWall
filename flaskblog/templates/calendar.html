@@ -20,7 +20,7 @@
 <body>
 
     <header class="site-header">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: black;">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="opacity:0.8; background-color: black;">
             <div class="container">
                 <a class="navbar-brand mr-4" href="/">My Blog</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,8 +59,6 @@
                               <a class="dropdown-item" href="#">Contact Me</a>
                             </div>
                         </li>
-
-
                         {% else %}
                         <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
                         <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
@@ -71,51 +69,9 @@
         </nav>
     </header>
 
-    <main role="main" class="container">
-        <div class="row">
-            <div class="col-md-8">
-                {% with messages = get_flashed_messages(with_categories=true) %}
-                    {% if messages %}
-                        {% for category, message in messages %}
-                            <div class="alert alert-{{ category }}">
-                                {{ message }}
-                            </div>
-                        {% endfor %}
-                    {% endif %}
-                {% endwith %}
-                {% block content %}{% endblock %}
-
-            </div>
-            <div class="col-md-4">
-                <div class="content-section">
-                    <h3>Find me on social media</h3>
-
-                    <ul class="list-group">
-                        <li class="list-group-item words">Instagram @Brian_wan1</li>
-                        <li class="list-group-item words">Snapchat @bwan4</li>
-                        <a style="color:#FFFAFF;" href="https://www.youtube.com/channel/UC-H-VGEVwBnc9LCwfgPzjlA" class="list-group-item words" >Youtube: Brian Wan</a>
-                        <a style="color:#FFFAFF;" href="https://github.com/tam-avarice" class="list-group-item words">Github: Brian Wan</a>
-                    </ul>
-                </div>
-
-                <div class="content-section">
-                    <h3 class="">Coming soon</h3>
-
-                    <ul style="list-style-type:circle;">
-                      <li class="">Commenting on posts</li>
-                      <li class="">Google calendar and other apis</li>
-                      <li class="">Gallery w photos</li>
-                      <li class="">Launch?</li>
-                    </ul>
-                </div>
-
-
-
-            </div>
-        </div>
-    </main>
-
-
+    <div align="center">
+        <iframe src="https://calendar.google.com/calendar/embed?src=bkxwan%40gmail.com&ctz=America%2FChicago" style="border: 0;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
